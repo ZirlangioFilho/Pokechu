@@ -1,21 +1,15 @@
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
     loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+    freeMode:true,
+    keyboard: true,
+    
+    navigation:  '#btnPass'
   });
+
+  $('#btnPass').on('click', function(){
+    swiper.slideNext()
+    $('#btnPass').toggleClass('button_pass button_pass_toggle')
+    $('#btnGo').toggleClass('button_pass_toggle button_pass')
+    
+  })
+

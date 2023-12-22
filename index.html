@@ -8,7 +8,7 @@
     <link rel="icon" href="img/pokebola.png">
     <link rel="stylesheet" href="font/pokemon-solid-font/PokemonSolidNormal-xyWR.ttf">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 </head>
 
@@ -21,54 +21,79 @@
         </div>
         <div class="apresentacao_inicial">
             <div class="apresentacao_inicial_container">
-                <div class="swiper">
-
-                    <div class="swiper-slide">
-                        <div class="primeira_apresentacao">
-                            <div class="apresentacao_inicial_imagem">
-                                <img src="img/apresentacao/image 134.svg" alt="">
-                                <img src="img/apresentacao/image 135.svg" alt="">
+              
+              
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="primeira_apresentacao">
+                                    <div class="apresentacao_inicial_imagem">
+                                        <img src="img/apresentacao/image 134.svg" alt="">
+                                        <img src="img/apresentacao/image 135.svg" alt="">
+                                    </div>
+                                    <div class="apresentacao_inicial_text">
+                                        <h2>Todos os Pokémons em um só Lugar</h2>
+                                        <p>Acesse uma vasta lista de Pokémon de todas as gerações já feitas pela Nintendo</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="apresentacao_inicial_text">
-                                <h2>Todos os Pokémons em um só Lugar</h2>
-                                <p>Acesse uma vasta lista de Pokémon de todas as gerações já feitas pela Nintendo</p>
+                            <div class="swiper-slide">
+                                <div class="segunda_apresentacao">
+                                    <div class="apresentacao_inicial_imagem">
+                                        <img src="img/apresentacao/sprite_hilda 1.svg" alt="">
+                                    </div>
+                                    <div class="apresentacao_inicial_text">
+                                        <h2>Mantenha sua Pokédex atualizada</h2>
+                                        <p>Cadastre-se e mantenha seu perfil,
+                                            pokémon favoritos, configurações e muito mais, salvos no aplicativo, mesmo sem
+                                            conexão
+                                            com a
+                                            internet.</p>
+                                    </div>
+                                </div>
                             </div>
+                          
                         </div>
                     </div>
+             
 
-                    <div class="swiper-slide">
-                        <div class="segunda_apresentacao">
-                            <div class="apresentacao_inicial_imagem">
-                                <img src="img/apresentacao/sprite_hilda 1.svg" alt="">
-                            </div>
-                            <div class="apresentacao_inicial_text">
-                                <h2>Mantenha sua Pokédex atualizada</h2>
-                                <p>Cadastre-se e mantenha seu perfil,
-                                    pokémon favoritos, configurações e muito mais, salvos no aplicativo, mesmo sem
-                                    conexão
-                                    com a
-                                    internet.</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="swiper-pagination"></div>
-                </div>
-
-                <div class="button_pass">
-                    <button id="btnPass">Vamos começar!</button>
+                <div class="button">
+                    <a id="btnPass" class="button_pass_none">Continuar</a>
+                    <a id="btnGo" class="button_pass_toggle">Vamos comecar!</a>
                 </div>
 
             </div>
     </Section>
 
+    <section id="pokemon_perfil">
+        <div class="container">
+            <div class="pokemon_sprite"><img src="" alt=""></div>
+            <div class="pokemon_id">
+                <h1>
+                    <span class="pokemon_name"></span>
+                    <span class="pokemon_number"></span>
+                </h1>
+            </div>
+            <div class="pokemon_type"><p></p></div>
+            <div class="pokemon_container_info">
+                <div class="pokemon_peso"></div>
+                <div class="pokemon_altura"></div>
+                <div class="pokemon_categoria"></div>
+                <div class="pokemon_habilidade"></div>
+            </div>
+            <div class="pokemon_gender"></div>
+            <div class="pokemon_weakness"></div>
+            <div class="pokemon_evolution"></div>
+        </div>
+    </section>
 
 
 
 
     <script src="js/jquery.js"></script>
     <script src="js/apresentacao_animate.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/apresentacaoSwiper.js"></script>
 </body>
 

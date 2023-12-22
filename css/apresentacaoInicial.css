@@ -37,17 +37,21 @@
     font-weight: 400;
 }
 
-.segunda_apresentacao{
-    display: none;
-}
 
+.swiper {
+  width: 300px; 
+  margin: auto;
+  }
 
-.button_pass{
+.button{
     position: absolute;
     bottom: 4.5rem;
     width: 100%;
+    display:flex;
+    justify-content: center;
+  
 }
-.button_pass button{
+.button_pass{
     padding: 1rem 2rem;
     width: 80%;
     font-size:clamp(20px, 40%, 200px);
@@ -57,3 +61,10 @@
     background:rgba(23, 62, 165, 1);
     cursor: pointer;
 }
+.button_pass_none{
+    display: none;
+}
+.button_pass_toggle{
+    display: none;
+}
+
