@@ -13,3 +13,7 @@ const swiper = new Swiper('.swiper', {
     
   })
 
+$('#btnGo').on('click', function(){
+  $('#apresentacao').css('transition', '2s').css('display', 'none')
+  $('#pokemon_perfil').css('display', 'flex')
+})

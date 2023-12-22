@@ -68,24 +68,54 @@
 
     <section id="pokemon_perfil">
         <div class="container">
-            <div class="pokemon_sprite"><img src="" alt=""></div>
+            <div class="pokemon_sprite"><img src="img/pokemonPerfil/bulbasaur 1.svg" alt=""></div>
             <div class="pokemon_id">
                 <h1>
-                    <span class="pokemon_name"></span>
-                    <span class="pokemon_number"></span>
+                    <span class="pokemon_name">Bulbasaur</span>
+                    <span class="pokemon_number_container"><span>Nº</span> <span class="pokemon_number">001</span>
                 </h1>
+                <form class="form">
+                    <input type="search" class="search" placeholder="Name or Number" required>
+                </form>
             </div>
-            <div class="pokemon_type"><p></p></div>
+            <div class="pokemon_type">
+                <p>Suicune encarna a compaixão de uma fonte de água pura. Ele atravessa a terra com graciosidade.</p>
+            </div>
+
             <div class="pokemon_container_info">
-                <div class="pokemon_peso"></div>
-                <div class="pokemon_altura"></div>
-                <div class="pokemon_categoria"></div>
-                <div class="pokemon_habilidade"></div>
+                <div class="pokemon_peso">
+                    <p class="description_info">
+                        <img src="img/icons/peso-icon.svg" alt=""> peso</p>
+                    <div class="block_pokemon_info peso">6.9kg</div>
+                </div>
+                <div class="pokemon_altura">
+                    <p class="description_info"><img src="img/icons/altura-icon.svg" alt=""> altura</p>
+                    <div class="block_pokemon_info altura">0,7m</div>
+
+                </div>
+                <div class="pokemon_categoria">
+                    <p class="description_info">
+                        <img src="img/icons/categoria-icon.svg" alt=""> categoria</p>
+                    <div class="block_pokemon_info categoria">Seed</div>
+
+                </div>
+                <div class="pokemon_habilidade">
+                    <p class="description_info"><img src="img/icons/circulo-habilidade-icon.svg" alt=""> habilidade</p>
+                    <div class="block_pokemon_info habilidade">Overgrow</div>
+
+                </div>
             </div>
+
             <div class="pokemon_gender"></div>
-            <div class="pokemon_weakness"></div>
-            <div class="pokemon_evolution"></div>
-        </div>
+            <!-- <div class="pokemon_weakness_container">
+                <h3>Fraquezas</h3>
+                <div class="pokemon_weakness"></div>
+            </div>
+            <div class="pokemon_evolution_container">
+                <h3>Evoluções</h3>
+                <div class="pokemon_evolution"></div>
+            </div>
+        </div> -->
     </section>
 
 
@@ -95,6 +125,7 @@
     <script src="js/apresentacao_animate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/apresentacaoSwiper.js"></script>
+    <script src="js/pokemonAPI.js"></script>
 </body>
 
 </html>

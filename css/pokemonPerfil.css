@@ -1,0 +1,74 @@
+#pokemon_perfil{
+    display: none;
+    justify-content: center;
+    background-image: url(../img/type-background/grama-type.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-size: contain;
+}
+
+.container{
+    padding: 1rem;
+    width: 90%;
+}
+.pokemon_sprite{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem;
+    padding-top: 8rem;
+    background-image: url(../img/type-background/grama-icon.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+   
+}
+.pokemon_sprite img{
+    width:10rem;
+    height: 10rem;
+}
+.pokemon_id h1{
+   display: flex;
+   justify-content: start;
+   flex-direction: column;
+   gap: .5rem;
+   padding: 1rem 0rem;
+}
+
+.pokemon_name{
+    font-size: clamp( 10px, 15vw, 25px);
+    font-weight: 500;
+}
+
+.pokemon_number_container{
+    font-size: clamp( 8px, 8vw, 17px);
+    font-weight: 400;
+}
+
+.pokemon_type{
+    padding: 1rem 0rem;
+    font-size: clamp( 7px, 8vw, 16px);
+}
+
+.pokemon_container_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.block_pokemon_info{
+    border: 1px solid #3333335d;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+}
+.description_info{
+    font-size: clamp( 6px, 6vw, 12px);
+    padding: .3rem 0rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    color:#3333338d;
+    text-transform: uppercase;
+}

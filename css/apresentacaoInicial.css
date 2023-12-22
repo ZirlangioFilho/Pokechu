@@ -1,5 +1,5 @@
 .apresentacao_inicial{
-    display: grid;
+    display: none;
     align-items: center;
     height: 100%;
     text-align: center;
