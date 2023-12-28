@@ -66,13 +66,129 @@ const fetchPokemon = async (pokemon) => {
 
       pokemonTypeName.innerHTML = data.dados.types[0].type.name
      
-      if (pokemonTypeName.innerHTML == 'electric'){
-        iconPerfil.src = "img/type-background/eletrico-icon.svg"
-        backgroundPerfil.src = "img/type-background/eletrico-type.svg"  
-        backgroundType.style.background = 'var(--yellow)'
-        pokemonTypeIcon.src = 'img/type-description-icons/eletric_icon.svg'
-      }else if(pokemonTypeName.innerHTML == 'fire'){
-        
+      switch (pokemonTypeName.innerHTML) {
+        case 'grass':
+          iconPerfil.src = "img/type-background/grama-icon.svg";
+          backgroundPerfil.src = "img/type-background/grama-type.svg";
+          backgroundType.style.background = 'var(--corGrama)';
+          pokemonTypeIcon.src = 'img/type-description-icons/grama-icon.svg';
+          break;
+
+        case 'electric':
+          iconPerfil.src = "img/type-background/eletrico-icon.svg";
+          backgroundPerfil.src = "img/type-background/eletrico-type.svg";
+          backgroundType.style.background = 'var(--corEletrico)';
+          pokemonTypeIcon.src = 'img/type-description-icons/eletrico-icon.svg';
+          break;
+      
+        case 'fire':
+          iconPerfil.src = "img/type-background/fogo-icon.svg";
+          backgroundPerfil.src = "img/type-background/fogo-type.svg";
+          backgroundType.style.background = 'var(--corFogo)';
+          pokemonTypeIcon.src = 'img/type-description-icons/fogo-icon.svg';
+          break;
+
+        case 'water':
+          iconPerfil.src = "img/type-background/agua-icon.svg";
+          backgroundPerfil.src = "img/type-background/agua-type.svg";
+          backgroundType.style.background = 'var(--corAgua)';
+          pokemonTypeIcon.src = 'img/type-description-icons/agua-icon.svg';
+          break;
+      
+        case 'bug':
+          iconPerfil.src = "img/type-background/inseto-icon.svg";
+          backgroundPerfil.src = "img/type-background/inseto-type.svg";
+          backgroundType.style.background = 'var(--corInseto)';
+          pokemonTypeIcon.src = 'img/type-description-icons/inseto-icon.svg';
+          break;
+
+        case 'fairy':
+          iconPerfil.src = "img/type-background/fada-icon.svg";
+          backgroundPerfil.src = "img/type-background/fada-type.svg";
+          backgroundType.style.background = 'var(--corFada)';
+          pokemonTypeIcon.src = 'img/type-description-icons/fada-icon.svg';
+          break;
+
+        case 'ground':
+          iconPerfil.src = "img/type-background/terrestre-icon.svg";
+          backgroundPerfil.src = "img/type-background/terrestre-type.svg";
+          backgroundType.style.background = 'var(--corTerrestre)';
+          pokemonTypeIcon.src = 'img/type-description-icons/terrestre-icon.svg';
+          break;
+
+        case 'rock':
+          iconPerfil.src = "img/type-background/pedra-icon.svg";
+          backgroundPerfil.src = "img/type-background/pedra-type.svg";
+          backgroundType.style.background = 'var(--corPedra)';
+          pokemonTypeIcon.src = 'img/type-description-icons/pedra-icon.svg';
+          break;
+
+        case 'normal':
+          iconPerfil.src = "img/type-background/normal-icon.svg";
+          backgroundPerfil.src = "img/type-background/normal-type.svg";
+          backgroundType.style.background = 'var(--corNormal)';
+          pokemonTypeIcon.src = 'img/type-description-icons/normal-icon.svg';
+          break;
+
+        case 'poison':
+          iconPerfil.src = "img/type-background/venenoso-icon.svg";
+          backgroundPerfil.src = "img/type-background/venenoso-type.svg";
+          backgroundType.style.background = 'var(--corVenenoso)';
+          pokemonTypeIcon.src = 'img/type-description-icons/venenoso-icon.svg';
+          break;
+
+        case 'psychic':
+          iconPerfil.src = "img/type-background/psiquico-icon.svg";
+          backgroundPerfil.src = "img/type-background/psiquico-type.svg";
+          backgroundType.style.background = 'var(--corPsiquico)';
+          pokemonTypeIcon.src = 'img/type-description-icons/psiquico-icon.svg';
+          break;
+
+        case 'steel':
+          iconPerfil.src = "img/type-background/metal-icon.svg";
+          backgroundPerfil.src = "img/type-background/metal-type.svg";
+          backgroundType.style.background = 'var(--corMetal)';
+          pokemonTypeIcon.src = 'img/type-description-icons/metal-icon.svg';
+          break;
+
+        case 'dragon':
+          iconPerfil.src = "img/type-background/dragao-icon.svg";
+          backgroundPerfil.src = "img/type-background/dragao-type.svg";
+          backgroundType.style.background = 'var(--corDragao)';
+          pokemonTypeIcon.src = 'img/type-description-icons/dragao-icon.svg';
+          break;
+
+        case 'fighting':
+          iconPerfil.src = "img/type-background/lutador-icon.svg";
+          backgroundPerfil.src = "img/type-background/lutador-type.svg";
+          backgroundType.style.background = 'var(--corLutador)';
+          pokemonTypeIcon.src = 'img/type-description-icons/lutador-icon.svg';
+          break;
+
+        case 'dark':
+          iconPerfil.src = "img/type-background/noturno-icon.svg";
+          backgroundPerfil.src = "img/type-background/noturno-type.svg";
+          backgroundType.style.background = 'var(--corNoturno)';
+          pokemonTypeIcon.src = 'img/type-description-icons/noturno-icon.svg';
+          break;
+       
+       
+        case 'ghost':
+          iconPerfil.src = "img/type-background/fantasma-icon.svg";
+          backgroundPerfil.src = "img/type-background/fantasma-type.svg";
+          backgroundType.style.background = 'var(--corFantasma)';
+          pokemonTypeIcon.src = 'img/type-description-icons/fantasma-icon.svg';
+          break;
+
+        case 'ice':
+          iconPerfil.src = "img/type-background/gelo-icon.svg";
+          backgroundPerfil.src = "img/type-background/gelo-type.svg";
+          backgroundType.style.background = 'var(--corGelo)';
+          pokemonTypeIcon.src = 'img/type-description-icons/gelo-icon.svg';
+          break;
+
+          
+          
       }
 
       const categoriaConsumida = data.dadosSpecie.genera.find(entry => entry.language.name === 'en').genus;

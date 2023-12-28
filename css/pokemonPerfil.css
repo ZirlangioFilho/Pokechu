@@ -1,12 +1,28 @@
 :root{
- --green: rgba(99, 188, 90, 1);
- --yellow: rgba(244, 210, 60, 1);
+ --corGrama: rgba(99, 188, 90, 1);
+ --corEletrico: rgba(244, 210, 60, 1);
+ --corAgua:rgba(80, 144, 214, 1);
+ --corFantasma:rgba(82, 105, 173, 1);
+ --corPedra:rgba(197, 183, 140, 1);
+ --corLutador:rgba(206, 65, 107, 1);
+ --corVenenoso:rgba(181, 103, 206, 1);
+ --corFogo:rgba(255, 157, 85, 1);
+ --corInseto:rgba(145, 193, 47, 1);
+ --corFada:rgba(236, 143, 230, 1);
+ --corTerrestre:rgba(217, 120, 69, 1);
+ --corNormal:rgba(145, 154, 162, 1);
+ --corPsiquico:rgba(250, 113, 121, 1);
+ --corGelo:rgba(115, 206, 192, 1);
+ --corDragao:rgba(11, 109, 195, 1);
+ --corMetal:rgba(90, 142, 162, 1);
+ --corNoturno:rgba(90, 84, 101, 1);
+ --corVoador:rgba(137, 170, 227, 1);
 }
 
 
 
 #pokemon_perfil{
-    /* display: none; */
+    display: none;
     justify-content: center;
   
 }
@@ -92,7 +108,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    background:var(--green);
+    background:var(--corGrama);
     padding: .5rem 1.7rem;
     border-radius: 30px;
 }
