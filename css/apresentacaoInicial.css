@@ -68,3 +68,23 @@
     display: none;
 }
 
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .pagination-bullet {
+    width: 10px; /* Diâmetro da bolinha */
+    height: 10px;
+    border-radius: 50%;
+    background-color: #007bff; /* Cor da bolinha */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .swiper-pagination-bullet-active .pagination-bullet {
+    transform: translateX(20px); /* Distância que a bolinha percorre quando ativa */
+  }
+  

@@ -17,3 +17,12 @@ $('#btnGo').on('click', function(){
   $('#apresentacao').css('transition', '2s').css('display', 'none')
   $('#pokemon_perfil').css('display', 'flex')
 })
+
+function updatePagination() {
+  var activeIndex = swiper.activeIndex;
+  var bullet = document.querySelector('.pagination-bullet');
+  var bulletWidth = bullet.offsetWidth;
+  var offset = activeIndex * bulletWidth;
+
+  bullet.style.transform = 'translateX(' + offset + 'px)';
+}
