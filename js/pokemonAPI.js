@@ -10,8 +10,8 @@ const backgroundType = document.querySelector('.block_description_text')
 const backgroundPerfil = document.querySelector('.background_pokemon_type img')
 const iconPerfil = document.querySelector('.icon_pokemon_type img')
 
-const pokemonPeso = document.querySelector(".peso")
-const pokemonAltura = document.querySelector(".altura")
+const pokemonPeso = document.querySelector(".peso p")
+const pokemonAltura = document.querySelector(".altura p")
 const pokemonCategoria = document.querySelector(".categoria")
 const pokemonHabilidade = document.querySelector(".habilidade")
 
@@ -23,6 +23,9 @@ const btnPrev = document.querySelector('.btn-prev')
 const btnNext = document.querySelector('.btn-next')
 
 let searchPokemon = 1
+console.log(searchPokemon)
+
+
 
 const fetchPokemon = async (pokemon) => {
     try {
@@ -60,8 +63,8 @@ const fetchPokemon = async (pokemon) => {
       pokemonImage.src = data.dados.sprites.versions['generation-v']['black-white']['animated']['front_default'];
       input.value = '';
       searchPokemon = data.dados.id;
-      pokemonPeso.innerHTML = data.dados.weight;
-      pokemonAltura.innerHTML = data.dados.height;
+      pokemonPeso.innerHTML = data.dados.weight / 10;
+      pokemonAltura.innerHTML = data.dados.height / 10;
       pokemonHabilidade.innerHTML = data.dados.abilities[0].ability.name;
 
       pokemonTypeName.innerHTML = data.dados.types[0].type.name
@@ -206,8 +209,8 @@ const fetchPokemon = async (pokemon) => {
   }
   
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
+form.addEventListener('submit', (event) => {
+    event.preventDefault()
    renderPokemon(input.value.toLowerCase())
 })
 
